@@ -1,8 +1,15 @@
 body {
     background-color: hsl(217, 54%, 11%);
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .box {
+    margin-bottom : 20px;
     height: auto;
     width: 350px;
     max-width:500px;
@@ -11,13 +18,25 @@ body {
     background-color: hsl(216, 50%, 16%);
 }
 
-.nftpict {
-    width: 90%;
+.image .nftpict {
+    width: 85%;
     margin-right: auto;
     margin-left:auto;
     margin-top:15px;
     margin-bottom:15px;
     border-radius: 10px;
+    position : relative;
+    display: inline-block;
+}
+.image .nftpict2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.image:hover .nftpict2{
+    display: inline;
 }
 
 .item-name-text {
@@ -56,7 +75,25 @@ body {
 
 .creation-text {
     float:left;
-    margin-top:auto;
-    margin-bottom:auto;
+    margin: 15px 5px;
     padding-bottom:20px;
+    color : white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.creation {
+    margin-bottom:75px;
+}
+
+.attribution {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: rgb(20, 200, 140);
 }
